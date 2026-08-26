@@ -177,16 +177,6 @@ independently: chat history is displayed but not used to rewrite follow-up queri
 diagrams and formulas in slides are lost or mangled. And, most importantly, **retrieval
 quality is not yet measured** — see below.
 
-## Roadmap
-
-- [ ] **Retrieval evaluation harness** — a labelled set of questions with expected source
-      documents, reporting hit-rate@k and MRR, so changes to chunking, embeddings or
-      search strategy can be judged on numbers instead of impressions.
-- [ ] Hybrid retrieval (BM25 + dense) and a cross-encoder reranking stage
-- [ ] Conversational query rewriting for follow-up questions
-- [ ] FastAPI service layer, so the UI is one client among several
-- [ ] Dockerfile and compose setup bundling the app with Ollama
-
 ---
 
 ## License
