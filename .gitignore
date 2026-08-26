@@ -1,0 +1,39 @@
+# ── Dati personali: NON pubblicare ──────────────────────────
+# Gli appunti sono materiale didattico di terzi e non vanno nel repository.
+Appunti/*
+!Appunti/README.md
+
+# Database vettoriale: dato derivato, si rigenera dai documenti.
+chroma_db_uni/
+*.sqlite3
+
+# ── Python ──────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ── Ambienti e segreti ──────────────────────────────────────
+.env
+.env.local
+
+# ── Editor / OS ─────────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Scratch ─────────────────────────────────────────────────
+prova/
+
+# Backup creati durante la revisione
+*.bak
+
+# Streamlit: la configurazione va versionata, i segreti no
+.streamlit/secrets.toml
+
+# Cartella di scarto: file che vanno eliminati a mano
+_to_delete/

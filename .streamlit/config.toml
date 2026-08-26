@@ -1,0 +1,9 @@
+[server]
+# Il watcher di Streamlit ispeziona i moduli importati per fare hot-reload, e
+# così facendo innesca gli import pigri di torch/transformers, che falliscono su
+# dipendenze opzionali (es. torchvision) di cui questo progetto non ha bisogno.
+# Nulla qui richiede il reload a caldo: dopo una modifica al codice, riavvia.
+fileWatcherType = "none"
+
+[browser]
+gatherUsageStats = false
